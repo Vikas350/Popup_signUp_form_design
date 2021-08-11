@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>PAYMENT FORM</title>
+    <link rel="stylesheet" href="payment.css"/>
+</head>
+<body class="body">
+    <div id="out">
+    <form action="">
+        <h1 class="pay">PAYMENT FORM</h1>
+        <h2>Contact Details</h2><hr/>
+        <p><em>* </em><i>fields are required</i></p>
+        <fieldset class="col">
+            <p>Name:<em>* </em><input type="text" name="name" /></p><br/>
+            <fieldset>
+                <legend>Gender<em>* </em></legend>
+                <p>
+                    Male <input type="radio" name="mal" id="male"/> Female <input type="radio" name="mal" id="male"/><br/>
+                    
+                </p>
+            </fieldset>
+            <p>Address: <textarea name="add" id="add" cols="100" rows="5"></textarea></p>
+            <p>Email:<em>* </em> <input type="email" name="eml" id="eml" placeholder="name@domain.ext"/></p>
+            <p>Pincode:<em>* </em> <input type="number" name="pin" id="pin" placeholder="######"/></p>
+        </fieldset>
+        <h2>Payment details</h2><hr/>
+        <fieldset class="col">
+            <p>Card Type:<em>* </em>
+                <select name="card_type" id="card_type">
+                <option value="">--select your card type--</option>
+                <option value="visa">Visa</option>
+                <option value="rupay">Rupay</option>
+                <option value="mastercard">Mastercard</option>
+                </select>
+            </p>
+            <p>Card Number:<em>* </em> <input type="number" name="card_num" id="card_num" placeholder="xxxx-xxxx-xxxx-xxxx"/></p>
+            <p>Expiration Date:<em>* </em> <input type="date" name="exp_date" id="exp_date"/></p>
+            <p>CVV :<em>*</em> <input type="password" name="cvv" id="cvv" min="100" max="999"/></p>
+            <p><input type="checkbox" name="final" id="final"/><em> Tick the box if the above given information is correct , then click on <b>PAY NOW.</b></em></p>
+            <input  class="but" type="submit" value="Pay Now"/>
+        </fieldset>
+        
+    </form>
+    </div>
+</body>
+
+</html>
